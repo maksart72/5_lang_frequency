@@ -15,8 +15,8 @@ def get_most_frequent_words(raw_text):
     for key in voc:
         key = key.lower()
         if key in word_frequence:
-            value = word_frequence[key]
-            word_frequence[key]=value+1
+            frequence = word_frequence[key]
+            word_frequence[key]=frequence+1
         else:
             word_frequence[key]=1
     
@@ -26,8 +26,8 @@ def get_most_frequent_words(raw_text):
 if __name__ == '__main__':
     raw_text = load_raw_text(filepath)
     frequent_words = get_most_frequent_words(raw_text)
-    i = 0
-    while i<=9:
-        s = str(frequent_words[i])
-        print(s)
-        i = i + 1
+    keyword = 0
+    while keyword<=9:
+        top = str(frequent_words[keyword])
+        print(top)
+        keyword = keyword + 1
