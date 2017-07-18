@@ -10,8 +10,6 @@ Example of script launch on Linux
 
 $ python lang_frequency.py <path to file>
 
-You will see for example:
-
 ```
 
 # Project Goals
