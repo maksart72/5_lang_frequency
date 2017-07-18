@@ -1,6 +1,18 @@
 # Frequency Analysis of Words
 
-Скрипт принимает на вход путь до текстового файла и выводит в консоль десять самых популярных слов в этом файле в порядке убывания частоты.
+This script does frequency analysis of words in the text file and shows top 10 words.
+
+# Quickstart
+
+Example of script launch on Linux
+
+```#!bash
+
+$ python lang_frequency.py <path to file>
+
+You will see for example:
+
+```
 
 # Project Goals
 
