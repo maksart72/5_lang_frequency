@@ -17,5 +17,5 @@ def print_most_frequent_words(raw_text, top):
 
 if __name__ == '__main__':
     filename = sys.argv[1]
-    topN = 10
-    print_most_frequent_words(load_file(filename), topN)
+    how_many_words = 10
+    print_most_frequent_words(load_file(filename), how_many_words)
