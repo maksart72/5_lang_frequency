@@ -22,6 +22,6 @@ def print_results(most_frequent):
 if __name__ == '__main__':
     filename = sys.argv[1]
     how_many_words = 10
-    result = find_most_frequent_words(load_file(filename), how_many_words)
-    print_results(result)
+    list_most_frequent = find_most_frequent_words(load_file(filename), how_many_words)
+    print_results(list_most_frequent)
     
