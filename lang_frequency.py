@@ -20,9 +20,12 @@ def print_results(most_frequent):
         print(word[0], ' - founded ', word[1], ' times')
 
 if __name__ == '__main__':
-    filename = sys.argv[1]
-    if not os.path.exists(filename):
-        print("Error! Check your file!")
+    try:
+        filename = sys.argv[1]
+        if not os.path.exists(filename) == True:
+            raise Exception ("Error: File doesn't exist!")
+    except IndexError:
+        print("Error: Empty argument try lang_frequency.py <filename>")
     else:
         how_many_words = 10
         list_most_frequent = find_most_frequent_words(load_file(filename), how_many_words)
